@@ -5,7 +5,7 @@
 
 	let { href, children }: { href: string; children: Snippet } = $props();
 
-	const isActive = href === page.url.pathname;
+	const isActive = new URL(href, 'http://a').pathname === page.url.pathname;
 
 	function handleClick(ev: Event) {
 		const target = ev.currentTarget as HTMLAnchorElement;
