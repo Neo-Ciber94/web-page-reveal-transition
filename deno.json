@@ -1,0 +1,5 @@
+{
+  "workspace": ["./apps/reveal-react", "./apps/reveal-svelte"],
+  "nodeModulesDir": "auto",
+  "unstable": ["unsafe-proto"]
+}

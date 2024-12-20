@@ -1,0 +1,32 @@
+.link {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  transition: 250ms ease-in-out;
+  position: relative;
+}
+
+.link:hover {
+  transform: scale(1.2);
+  color: yellow;
+}
+
+.link[data-active="true"] {
+  color: yellow;
+}
+
+.link:after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: yellow;
+  transition: 250ms ease-in-out;
+}
+
+.link:hover:after {
+  width: 100%;
+}
