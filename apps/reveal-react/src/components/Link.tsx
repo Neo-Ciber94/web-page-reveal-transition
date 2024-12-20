@@ -13,7 +13,7 @@ export default function Link({ href, children }: LinkProps) {
   const pathname = usePathname();
   const isActive = useMemo(() => {
     return pathname === new URL(href, "http://a").pathname;
-  }, []);
+  }, [pathname]);
 
   function handleClick(ev: React.MouseEvent<HTMLAnchorElement>) {
     const target = ev.currentTarget as HTMLAnchorElement;
