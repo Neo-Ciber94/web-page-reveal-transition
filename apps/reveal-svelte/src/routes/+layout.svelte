@@ -7,9 +7,9 @@
 </script>
 
 <nav>
-	<Link href={`/${base}`}>Home</Link>
-	<Link href={`/${base}/a`}>Page A</Link>
-	<Link href={`/${base}/b`}>Page B</Link>
+	<Link href={`${base}/`}>Home</Link>
+	<Link href={`${base}/a`}>Page A</Link>
+	<Link href={`${base}/b`}>Page B</Link>
 </nav>
 
 <main>
