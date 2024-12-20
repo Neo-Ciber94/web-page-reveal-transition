@@ -1,10 +1,15 @@
 <script>
 	import './app.css';
+	import { base } from '$app/paths';
 	import Announcer from './components/Announcer.svelte';
 	import Link from './components/Link.svelte';
-
 	let { children } = $props();
 </script>
+
+
+<svelte:head>
+	<base href={base}/>
+</svelte:head>
 
 <nav>
 	<Link href="/">Home</Link>
